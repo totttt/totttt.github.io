@@ -260,7 +260,7 @@ function onMouseMove(event) {
         factor: 0.4
         });
 
-        r_arm_x = map(event.point.x, 0, view.viewSize.width, 0, 300);
+        r_arm_x = map(event.point.x, 0, view.viewSize.width, 0, 500);
         holeman.children[3].children[5].segments[4].point = [r_arm_x+480,220];
         holeman.children[3].children[5].segments[5].point = [r_arm_x+520,230];
         holeman.children[3].children[5].segments[6].point = [r_arm_x+531,240];
@@ -268,7 +268,7 @@ function onMouseMove(event) {
         holeman.children[3].children[5].segments[8].point = [r_arm_x+527,252];
         holeman.children[3].children[5].segments[9].point = [r_arm_x+519,257];
 
-        r_arm_x_fill = map(event.point.x, 0, view.viewSize.width, 0, 300);
+        r_arm_x_fill = map(event.point.x, 0, view.viewSize.width, 0, 500);
         holeman.children[0].segments[14].point = [r_arm_x_fill+480,220];
         holeman.children[0].segments[15].point = [r_arm_x_fill+520,230];
         holeman.children[0].segments[16].point = [r_arm_x_fill+531,240];
