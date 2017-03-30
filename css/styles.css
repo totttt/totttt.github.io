@@ -6,12 +6,12 @@ body {
   margin: 0;
   height: 100%;
 
-  background-color: #2e6991;
+  background-color: #0000ff;
 }
 
 #holeman {
   display: block;
   margin: 0 auto;
   width: 1920px;
-  height: 1080px;
+  height: 900px;
 }
