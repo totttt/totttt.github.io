@@ -280,7 +280,7 @@ function onMouseMove(event) {
         factor: 0.4
         });
 
-        l_leg_y = map(event.point.y, 0, view.viewSize.width, 0, 100);
+        l_leg_y = map(event.point.y, 0, view.viewSize.width, 0, 300);
         holeman.children[2].children[0].segments[2].point = [258,490+l_leg_y];
         holeman.children[2].children[0].segments[3].point = [263,530+l_leg_y];
         holeman.children[2].children[0].segments[4].point = [270,540+l_leg_y];
@@ -289,7 +289,7 @@ function onMouseMove(event) {
         holeman.children[2].children[0].segments[7].point = [297,530+l_leg_y];
         holeman.children[2].children[0].segments[8].point = [302,490+l_leg_y];
 
-        l_leg_y_fill = map(event.point.y, 0, view.viewSize.width, 0, 100);
+        l_leg_y_fill = map(event.point.y, 0, view.viewSize.width, 0, 300);
         holeman.children[0].segments[35].point = [302,490+l_leg_y_fill];
         holeman.children[0].segments[36].point = [297,530+l_leg_y_fill];
         holeman.children[0].segments[37].point = [290,540+l_leg_y_fill];
@@ -298,7 +298,7 @@ function onMouseMove(event) {
         holeman.children[0].segments[40].point = [263,533+l_leg_y_fill];
         holeman.children[0].segments[41].point = [258,490+l_leg_y_fill];
 
-        r_leg_y = map(event.point.y, 0, view.viewSize.width, 0, 100);
+        r_leg_y = map(event.point.y, 0, view.viewSize.width, 0, 300);
         holeman.children[2].children[1].segments[2].point = [442,490+r_leg_y];
         holeman.children[2].children[1].segments[3].point = [437,530+r_leg_y];
         holeman.children[2].children[1].segments[4].point = [430,540+r_leg_y];
@@ -307,7 +307,7 @@ function onMouseMove(event) {
         holeman.children[2].children[1].segments[7].point = [403,530+r_leg_y];
         holeman.children[2].children[1].segments[8].point = [398,490+r_leg_y];
 
-        r_leg_y_fill = map(event.point.y, 0, view.viewSize.width, 0, 100);
+        r_leg_y_fill = map(event.point.y, 0, view.viewSize.width, 0, 300);
         holeman.children[0].segments[23].point = [442,490+r_leg_y_fill];
         holeman.children[0].segments[24].point = [437,530+r_leg_y_fill];
         holeman.children[0].segments[25].point = [430,540+r_leg_y_fill];
