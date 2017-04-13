@@ -319,6 +319,9 @@ function onMouseMove(event) {
     holeman.children[0].segments[27].point = [410,540+r_leg_y_fill];
     holeman.children[0].segments[28].point = [403,533+r_leg_y_fill];
     holeman.children[0].segments[29].point = [398,490+r_leg_y_fill];
+
+    stage_y = map(event.point.y, 0, view.viewSize.height, 0, 200);
+    stage.point = [view.center.x,650+stage_y];
 };
 
 
@@ -368,7 +371,7 @@ command_mouse.style = {
 var holeman2 = holeman.copyTo(project);
     holeman2.scaling = 0.4
     holeman2.applyMatrix = true;
-    holeman2.position = [150, view.viewSize.height-180]
+    holeman2.position = [150, view.viewSize.height-150]
     holeman2.children[4].children[1].rotate(70);
     holeman2.children[4].children[1].scaling = (1, 0.5);
     holeman2.children[4].children[2].rotate(110);
@@ -382,7 +385,7 @@ var holeman2 = holeman.copyTo(project);
 var holeman3 = holeman.copyTo(project);
     holeman3.scaling = 0.4
     holeman3.applyMatrix = true;
-    holeman3.position = [350, view.viewSize.height-180]
+    holeman3.position = [400, view.viewSize.height-150]
     holeman3.children[4].children[1].rotate(70);
     holeman3.children[4].children[1].scaling = (1, 0.5);
     holeman3.children[4].children[2].rotate(110);
@@ -396,7 +399,7 @@ var holeman3 = holeman.copyTo(project);
 var holeman4 = holeman.copyTo(project);
     holeman4.scaling = 0.4
     holeman4.applyMatrix = true;
-    holeman4.position = [view.viewSize.width-350, view.viewSize.height-180]
+    holeman4.position = [view.viewSize.width-400, view.viewSize.height-150]
     holeman4.children[4].children[1].rotate(70);
     holeman4.children[4].children[1].scaling = (1, 0.5);
     holeman4.children[4].children[2].rotate(110);
@@ -410,7 +413,7 @@ var holeman4 = holeman.copyTo(project);
 var holeman5 = holeman.copyTo(project);
     holeman5.scaling = 0.4
     holeman5.applyMatrix = true;
-    holeman5.position = [view.viewSize.width-150, view.viewSize.height-180]
+    holeman5.position = [view.viewSize.width-150, view.viewSize.height-150]
     holeman5.children[4].children[1].rotate(70);
     holeman5.children[4].children[1].scaling = (1, 0.5);
     holeman5.children[4].children[2].rotate(110);
@@ -424,7 +427,7 @@ var holeman5 = holeman.copyTo(project);
 
 //singing mouth
 var singing_mouth = new Shape.Ellipse({
-    point: [view.center.x-15, 345],
+    point: [view.center.x-15, view.viewSize.height-50],
     size: [30, 10]});
     singing_mouth.strokeColor = '#000000',
     singing_mouth.strokeWidth = 6,
@@ -442,7 +445,7 @@ var singing_mouth_2 = new Shape.Ellipse({
     singing_mouth_2.applyMatrix = true;
 
 var singing_mouth_3 = new Shape.Ellipse({
-    point: [350, 0],
+    point: [400, 0],
     size: [0, 0]});
     singing_mouth_3.strokeColor = '#000000',
     singing_mouth_3.strokeWidth = 3.5,
@@ -451,7 +454,7 @@ var singing_mouth_3 = new Shape.Ellipse({
     singing_mouth_3.applyMatrix = true;
 
 var singing_mouth_4 = new Shape.Ellipse({
-    point: [view.viewSize.width-350, 0],
+    point: [view.viewSize.width-400, 0],
     size: [0, 0]});
     singing_mouth_4.strokeColor = '#000000',
     singing_mouth_4.strokeWidth = 3.5,
@@ -474,15 +477,15 @@ function onFrame(event) {
     count++;
     if (count % 4 === 0) {
         var singing_mouth_size = getRandom(10, 40);
-        singing_mouth.position.y = 335+singing_mouth_size/2;
+        singing_mouth.position.y = view.viewSize.height-590+singing_mouth_size/2;
         singing_mouth.size = [30,singing_mouth_size];
-        singing_mouth_2.position.y = view.viewSize.height-226+singing_mouth_size/4;
+        singing_mouth_2.position.y = view.viewSize.height-195+singing_mouth_size/4;
         singing_mouth_2.size = [12,singing_mouth_size/2];
-        singing_mouth_3.position.y = view.viewSize.height-226+singing_mouth_size/4;
+        singing_mouth_3.position.y = view.viewSize.height-195+singing_mouth_size/4;
         singing_mouth_3.size = [12,singing_mouth_size/2];
-        singing_mouth_4.position.y = view.viewSize.height-226+singing_mouth_size/4;
+        singing_mouth_4.position.y = view.viewSize.height-195+singing_mouth_size/4;
         singing_mouth_4.size = [12,singing_mouth_size/2];
-        singing_mouth_5.position.y = view.viewSize.height-226+singing_mouth_size/4;
+        singing_mouth_5.position.y = view.viewSize.height-195+singing_mouth_size/4;
         singing_mouth_5.size = [12,singing_mouth_size/2];
     }
     else {
