@@ -240,7 +240,8 @@ var holeman = new Group([
 ]);
 
 holeman.applyMatrix = false;
-holeman.position = view.center;
+holeman.position.x = view.center.x;
+holeman.position.y = view.viewSize.height-480;
 
 
 //arms and legs movement
