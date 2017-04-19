@@ -1,4 +1,10 @@
 //fill
+var background = new Path.Rectangle({
+    point: [0, 0],
+    size: [view.viewSize.width, view.viewSize.height],
+    fillColor: '#c3d4e5',
+    });
+
 var stage = new Shape.Ellipse({
     point: [view.center.x-250, 650],
     size: [500, 200]});
@@ -6,6 +12,34 @@ var stage = new Shape.Ellipse({
 stage.fillColor = '#000000';
 stage.visible = true;
 
+
+//path
+var path1 = new Path({
+    segments: [[130, 200], [180, 250]],
+    strokeColor: '#a8c0d8',
+    strokeWidth: 20,
+    strokeCap: 'round'
+});
+path1.position = [140, 230]
+path1.applyMatrix = false;
+
+var path2 = path1.copyTo(project);
+path2.position = [350, 430]
+
+var path3 = path1.copyTo(project);
+path3.position = [140, 630]
+
+var path4 = path1.copyTo(project);
+path4.position = [view.viewSize.width-140, 230]
+
+var path5 = path1.copyTo(project);
+path5.position = [view.viewSize.width-350, 430]
+
+var path6 = path1.copyTo(project);
+path6.position = [view.viewSize.width-140, 630]
+
+var path_group = new Group (
+    path1, path2, path3, path4, path5, path6);
 
 var fill = new Path({
     segments: [[300,200], [308,180], [315,150], [325,110], [335,90],
@@ -323,32 +357,25 @@ function onMouseMove(event) {
 
     stage_y = map(event.point.y, 0, view.viewSize.height, 0, 200);
     stage.point = [view.center.x,650+stage_y];
+
+    path1.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path1.rotate(5);
+    path2.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path2.rotate(5);
+    path3.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path3.rotate(5);
+    path4.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path4.rotate(5);
+    path5.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path5.rotate(5);
+    path6.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path6.rotate(5);
 };
 
 
 //texts
-var song_name_0 = new PointText(view.viewSize.width-50, 100);
-song_name_0.content = 'Temples - Certainty';
-song_name_0.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 25,
-    fillColor: 'black',
-    justification: 'right'
-};
-
-var song_lyrics_0 = new PointText(view.viewSize.width, 150);
-song_lyrics_0.content = 'I want to know that certainties in my life. I want to know that certainties in the light. I want to know that certainties in my life. Is not lonely and more defined.';
-song_lyrics_0.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 20,
-    fillColor: 'black',
-    justification: 'left'
-};
-
 var command_key = new PointText(50, 75);
-command_key.content = 'Press 0 - 9';
+command_key.content = 'Press 1, 2, 3 and 0';
 command_key.style = {
     fontFamily: 'Courier New',
     fontWeight: 'bold',
@@ -491,25 +518,181 @@ function onFrame(event) {
     }
     else {
         song_lyrics_0.position.x -= 2;
+        song_lyrics_1.position.x -= 2;
+        song_lyrics_2.position.x -= 2;
+        song_lyrics_3.position.x -= 2;
     }
 }
 
 function onMouseDown(event) {
-        holeman.children[4].children[3].visible = false;
-        singing_mouth.visible = true;
-        singing_mouth_2.visible = true;
-        singing_mouth_3.visible = true;
-        singing_mouth_4.visible = true;
-        singing_mouth_5.visible = true;
+    holeman.children[4].children[3].visible = false;
+    singing_mouth.visible = true;
+    singing_mouth_2.visible = true;
+    singing_mouth_3.visible = true;
+    singing_mouth_4.visible = true;
+    singing_mouth_5.visible = true;
 }
 
 function onMouseUp(event) {
-        holeman.children[4].children[3].visible = true;
-        singing_mouth.visible = false;
-        singing_mouth_2.visible = false;
-        singing_mouth_3.visible = false;
-        singing_mouth_4.visible = false;
-        singing_mouth_5.visible = false;
+    holeman.children[4].children[3].visible = true;
+    singing_mouth.visible = false;
+    singing_mouth_2.visible = false;
+    singing_mouth_3.visible = false;
+    singing_mouth_4.visible = false;
+    singing_mouth_5.visible = false;
+}
+
+
+//song names and lyrics
+var song_name_0 = new PointText(view.viewSize.width-50, 100);
+    song_name_0.content = 'Certainty';
+    song_name_0.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 25,
+    fillColor: 'black',
+    justification: 'right'
+    };
+
+var song_lyrics_0 = new PointText(view.viewSize.width, 150);
+    song_lyrics_0.content = 'I want to know that certainties in my life. I want to know that certainties in the light. I want to know that certainties in my life. Is not lonely and more defined.';
+    song_lyrics_0.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 20,
+    fillColor: 'black',
+    justification: 'left'
+    };
+
+var song_name_1 = new PointText(view.viewSize.width-50, 100);
+    song_name_1.content = 'Spiderhead';
+    song_name_1.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 25,
+    fillColor: 'black',
+    justification: 'right'
+    };
+    song_name_1.visible = false;
+
+var song_lyrics_1 = new PointText(view.viewSize.width, 150);
+    song_lyrics_1.content = 'Spiders in my head. Spiders in my mind. It all works out in time. You know I am gonna be alright.';
+    song_lyrics_1.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 20,
+    fillColor: 'black',
+    justification: 'left'
+    };
+    song_lyrics_1.visible = false;
+
+var song_name_2 = new PointText(view.viewSize.width-50, 100);
+    song_name_2.content = 'After the disco';
+    song_name_2.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 25,
+    fillColor: 'black',
+    justification: 'right'
+    };
+    song_name_2.visible = false;
+
+var song_lyrics_2 = new PointText(view.viewSize.width, 150);
+    song_lyrics_2.content = 'Do what you want, do what you will, but you cannot hide.';
+    song_lyrics_2.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 20,
+    fillColor: 'black',
+    justification: 'left'
+    };
+    song_lyrics_2.visible = false;
+
+var song_name_3 = new PointText(view.viewSize.width-50, 100);
+    song_name_3.content = 'Que sera';
+    song_name_3.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 25,
+    fillColor: 'black',
+    justification: 'right'
+    };
+    song_name_3.visible = false;
+
+var song_lyrics_3 = new PointText(view.viewSize.width, 150);
+    song_lyrics_3.content = 'Que sera sera. Que sera sera. Whatever will be.';
+    song_lyrics_3.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 20,
+    fillColor: 'black',
+    justification: 'left'
+    };
+    song_lyrics_3.visible = false;
+
+function onKeyDown(event) {
+    if(event.key == '1') {
+        song_name_0.visible = false;
+        song_lyrics_0.visible = false;
+        song_name_2.visible = false;
+        song_lyrics_2.visible = false;
+        song_name_3.visible = false;
+        song_lyrics_3.visible = false;
+        //
+        song_name_1.visible = true;
+        song_lyrics_1.visible = true;
+        song_lyrics_1.position.x = view.viewSize.width+590
+        //
+        background.fillColor = '#b4345b'
+        path_group.strokeColor = '#a72c52'
+    }
+    if(event.key == '2') {
+        song_name_0.visible = false;
+        song_lyrics_0.visible = false;
+        song_name_1.visible = false;
+        song_lyrics_1.visible = false;
+        song_name_3.visible = false;
+        song_lyrics_3.visible = false;
+        //
+        song_name_2.visible = true;
+        song_lyrics_2.visible = true;
+        song_lyrics_2.position.x = view.viewSize.width+350
+        song_lyrics_2.visible = true;
+        background.fillColor = '#79779f'
+        path_group.strokeColor = '#6a6890'
+    }
+    if(event.key == '3') {
+        song_name_0.visible = false;
+        song_lyrics_0.visible = false;
+        song_name_1.visible = false;
+        song_lyrics_1.visible = false;
+        song_name_2.visible = false;
+        song_lyrics_2.visible = false;
+        //
+        song_name_3.visible = true;
+        song_lyrics_3.visible = true;
+        song_lyrics_3.position.x = view.viewSize.width+290
+        song_lyrics_3.visible = true;
+        //
+        background.fillColor = '#afa1d2'
+        path_group.strokeColor = '#9e8fc1'
+    }
+    if(event.key == '0') {
+        song_name_1.visible = false;
+        song_lyrics_1.visible = false;
+        song_name_2.visible = false;
+        song_lyrics_2.visible = false;
+        song_name_3.visible = false;
+        song_lyrics_3.visible = false;
+        //
+        song_name_0.visible = true;
+        song_lyrics_0.visible = true;
+        song_lyrics_0.position.x = view.viewSize.width+1000
+        song_lyrics_0.visible = true;
+        //
+        background.fillColor = '#c3d4e5'
+        path_group.strokeColor = '#a8c0d8'
+    }
 }
 
 
