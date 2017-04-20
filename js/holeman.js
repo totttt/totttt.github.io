@@ -17,14 +17,14 @@ stage.visible = true;
 var path1 = new Path({
     segments: [[130, 200], [180, 250]],
     strokeColor: '#a8c0d8',
-    strokeWidth: 20,
+    strokeWidth: 10,
     strokeCap: 'round'
 });
 path1.position = [140, 230]
 path1.applyMatrix = false;
 
 var path2 = path1.copyTo(project);
-path2.position = [350, 430]
+path2.position = [450, 430]
 
 var path3 = path1.copyTo(project);
 path3.position = [140, 630]
@@ -33,7 +33,7 @@ var path4 = path1.copyTo(project);
 path4.position = [view.viewSize.width-140, 230]
 
 var path5 = path1.copyTo(project);
-path5.position = [view.viewSize.width-350, 430]
+path5.position = [view.viewSize.width-450, 430]
 
 var path6 = path1.copyTo(project);
 path6.position = [view.viewSize.width-140, 630]
@@ -358,17 +358,17 @@ function onMouseMove(event) {
     stage_y = map(event.point.y, 0, view.viewSize.height, 0, 200);
     stage.point = [view.center.x,650+stage_y];
 
-    path1.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path1.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
     path1.rotate(5);
-    path2.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path2.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
     path2.rotate(5);
-    path3.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path3.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
     path3.rotate(5);
-    path4.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path4.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
     path4.rotate(5);
-    path5.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path5.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
     path5.rotate(5);
-    path6.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 2);
+    path6.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
     path6.rotate(5);
 };
 
@@ -630,6 +630,16 @@ var song_lyrics_3 = new PointText(view.viewSize.width, 150);
     };
     song_lyrics_3.visible = false;
 
+var holeword = new PointText(view.center.x+3,view.center.y+10);
+    holeword.content = 'yeah'
+    holeword.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 10,
+    fillColor: 'black',
+    justification: 'right'
+    };
+
 function onKeyDown(event) {
     if(event.key == '1') {
         song_name_0.visible = false;
@@ -693,6 +703,12 @@ function onKeyDown(event) {
         background.fillColor = '#c3d4e5'
         path_group.strokeColor = '#a8c0d8'
     }
+}
+
+function onResize(){
+    background.position = view.center;
+    holeword.position.x = map(view.bounds.width, 0, -2000, 0, -1000);
+    holeword.scaling = map(view.bounds.width, 0, 2000, 5, 0);
 }
 
 
