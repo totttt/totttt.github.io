@@ -653,7 +653,6 @@ function onKeyDown(event) {
         song_lyrics_1.visible = true;
         song_lyrics_1.position.x = view.viewSize.width+590
         //
-        background.fillColor = '#b4345b'
         path_group.strokeColor = '#a72c52'
     }
     if(event.key == '2') {
@@ -668,7 +667,6 @@ function onKeyDown(event) {
         song_lyrics_2.visible = true;
         song_lyrics_2.position.x = view.viewSize.width+350
         song_lyrics_2.visible = true;
-        background.fillColor = '#79779f'
         path_group.strokeColor = '#6a6890'
     }
     if(event.key == '3') {
@@ -684,7 +682,6 @@ function onKeyDown(event) {
         song_lyrics_3.position.x = view.viewSize.width+290
         song_lyrics_3.visible = true;
         //
-        background.fillColor = '#afa1d2'
         path_group.strokeColor = '#9e8fc1'
     }
     if(event.key == '0') {
@@ -700,7 +697,6 @@ function onKeyDown(event) {
         song_lyrics_0.position.x = view.viewSize.width+1000
         song_lyrics_0.visible = true;
         //
-        background.fillColor = '#c3d4e5'
         path_group.strokeColor = '#a8c0d8'
     }
 }
