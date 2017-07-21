@@ -518,9 +518,9 @@ function onFrame(event) {
     }
     else {
         song_lyrics_0.position.x -= 2;
-        song_lyrics_1.position.x -= 2;
-        song_lyrics_2.position.x -= 2;
-        song_lyrics_3.position.x -= 2;
+        // song_lyrics_1.position.x -= 2;
+        // song_lyrics_2.position.x -= 2;
+        // song_lyrics_3.position.x -= 2;
     }
 }
 
