@@ -375,7 +375,7 @@ function onMouseMove(event) {
 
 //texts
 var command_key = new PointText(50, 75);
-command_key.content = 'Press 1, 2, 3 and 0';
+command_key.content = 'Click to sing';
 command_key.style = {
     fontFamily: 'Courier New',
     fontWeight: 'bold',
@@ -384,15 +384,15 @@ command_key.style = {
     justification: 'left'
 };
 
-var command_mouse = new PointText(50, 100);
-command_mouse.content = 'Click to sing';
-command_mouse.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 20,
-    fillColor: 'black',
-    justification: 'left'
-};
+// var command_mouse = new PointText(50, 100);
+// command_mouse.content = 'Click to sing';
+// command_mouse.style = {
+//     fontFamily: 'Courier New',
+//     fontWeight: 'bold',
+//     fontSize: 20,
+//     fillColor: 'black',
+//     justification: 'left'
+// };
 
 
 //chorus holemen
@@ -544,8 +544,8 @@ function onMouseUp(event) {
 
 
 //song names and lyrics
-var song_name_0 = new PointText(view.viewSize.width-50, 100);
-    song_name_0.content = 'Certainty';
+var song_name_0 = new PointText(view.center.x, view.center.y);
+    song_name_0.content = 'Small People';
     song_name_0.style = {
     fontFamily: 'Courier New',
     fontWeight: 'bold',
@@ -564,148 +564,148 @@ var song_lyrics_0 = new PointText(view.viewSize.width, 150);
     justification: 'left'
     };
 
-var song_name_1 = new PointText(view.viewSize.width-50, 100);
-    song_name_1.content = 'Spiderhead';
-    song_name_1.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 25,
-    fillColor: 'black',
-    justification: 'right'
-    };
-    song_name_1.visible = false;
-
-var song_lyrics_1 = new PointText(view.viewSize.width, 150);
-    song_lyrics_1.content = 'Spiders in my head. Spiders in my mind. It all works out in time. You know I am gonna be alright.';
-    song_lyrics_1.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 20,
-    fillColor: 'black',
-    justification: 'left'
-    };
-    song_lyrics_1.visible = false;
-
-var song_name_2 = new PointText(view.viewSize.width-50, 100);
-    song_name_2.content = 'After the disco';
-    song_name_2.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 25,
-    fillColor: 'black',
-    justification: 'right'
-    };
-    song_name_2.visible = false;
-
-var song_lyrics_2 = new PointText(view.viewSize.width, 150);
-    song_lyrics_2.content = 'Do what you want, do what you will, but you cannot hide.';
-    song_lyrics_2.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 20,
-    fillColor: 'black',
-    justification: 'left'
-    };
-    song_lyrics_2.visible = false;
-
-var song_name_3 = new PointText(view.viewSize.width-50, 100);
-    song_name_3.content = 'Que sera';
-    song_name_3.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 25,
-    fillColor: 'black',
-    justification: 'right'
-    };
-    song_name_3.visible = false;
-
-var song_lyrics_3 = new PointText(view.viewSize.width, 150);
-    song_lyrics_3.content = 'Que sera sera. Que sera sera. Whatever will be.';
-    song_lyrics_3.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 20,
-    fillColor: 'black',
-    justification: 'left'
-    };
-    song_lyrics_3.visible = false;
-
-var holeword = new PointText(view.center.x+3,view.center.y+10);
-    holeword.content = 'yeah'
-    holeword.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 10,
-    fillColor: 'black',
-    justification: 'right'
-    };
-
-function onKeyDown(event) {
-    if(event.key == '1') {
-        song_name_0.visible = false;
-        song_lyrics_0.visible = false;
-        song_name_2.visible = false;
-        song_lyrics_2.visible = false;
-        song_name_3.visible = false;
-        song_lyrics_3.visible = false;
-        //
-        song_name_1.visible = true;
-        song_lyrics_1.visible = true;
-        song_lyrics_1.position.x = view.viewSize.width+590
-        //
-        path_group.strokeColor = '#a72c52'
-    }
-    if(event.key == '2') {
-        song_name_0.visible = false;
-        song_lyrics_0.visible = false;
-        song_name_1.visible = false;
-        song_lyrics_1.visible = false;
-        song_name_3.visible = false;
-        song_lyrics_3.visible = false;
-        //
-        song_name_2.visible = true;
-        song_lyrics_2.visible = true;
-        song_lyrics_2.position.x = view.viewSize.width+350
-        song_lyrics_2.visible = true;
-        path_group.strokeColor = '#6a6890'
-    }
-    if(event.key == '3') {
-        song_name_0.visible = false;
-        song_lyrics_0.visible = false;
-        song_name_1.visible = false;
-        song_lyrics_1.visible = false;
-        song_name_2.visible = false;
-        song_lyrics_2.visible = false;
-        //
-        song_name_3.visible = true;
-        song_lyrics_3.visible = true;
-        song_lyrics_3.position.x = view.viewSize.width+290
-        song_lyrics_3.visible = true;
-        //
-        path_group.strokeColor = '#9e8fc1'
-    }
-    if(event.key == '0') {
-        song_name_1.visible = false;
-        song_lyrics_1.visible = false;
-        song_name_2.visible = false;
-        song_lyrics_2.visible = false;
-        song_name_3.visible = false;
-        song_lyrics_3.visible = false;
-        //
-        song_name_0.visible = true;
-        song_lyrics_0.visible = true;
-        song_lyrics_0.position.x = view.viewSize.width+1000
-        song_lyrics_0.visible = true;
-        //
-        path_group.strokeColor = '#a8c0d8'
-    }
-}
-
-function onResize(){
-    background.position = view.center;
-    holeword.position.x = map(view.bounds.width, 0, -2000, 0, -1000);
-    holeword.scaling = map(view.bounds.width, 0, 2000, 5, 0);
-}
+// var song_name_1 = new PointText(view.viewSize.width-50, 100);
+//     song_name_1.content = 'Spiderhead';
+//     song_name_1.style = {
+//     fontFamily: 'Courier New',
+//     fontWeight: 'bold',
+//     fontSize: 25,
+//     fillColor: 'black',
+//     justification: 'right'
+//     };
+//     song_name_1.visible = false;
+//
+// var song_lyrics_1 = new PointText(view.viewSize.width, 150);
+//     song_lyrics_1.content = 'Spiders in my head. Spiders in my mind. It all works out in time. You know I am gonna be alright.';
+//     song_lyrics_1.style = {
+//     fontFamily: 'Courier New',
+//     fontWeight: 'bold',
+//     fontSize: 20,
+//     fillColor: 'black',
+//     justification: 'left'
+//     };
+//     song_lyrics_1.visible = false;
+//
+// var song_name_2 = new PointText(view.viewSize.width-50, 100);
+//     song_name_2.content = 'After the disco';
+//     song_name_2.style = {
+//     fontFamily: 'Courier New',
+//     fontWeight: 'bold',
+//     fontSize: 25,
+//     fillColor: 'black',
+//     justification: 'right'
+//     };
+//     song_name_2.visible = false;
+//
+// var song_lyrics_2 = new PointText(view.viewSize.width, 150);
+//     song_lyrics_2.content = 'Do what you want, do what you will, but you cannot hide.';
+//     song_lyrics_2.style = {
+//     fontFamily: 'Courier New',
+//     fontWeight: 'bold',
+//     fontSize: 20,
+//     fillColor: 'black',
+//     justification: 'left'
+//     };
+//     song_lyrics_2.visible = false;
+//
+// var song_name_3 = new PointText(view.viewSize.width-50, 100);
+//     song_name_3.content = 'Que sera';
+//     song_name_3.style = {
+//     fontFamily: 'Courier New',
+//     fontWeight: 'bold',
+//     fontSize: 25,
+//     fillColor: 'black',
+//     justification: 'right'
+//     };
+//     song_name_3.visible = false;
+//
+// var song_lyrics_3 = new PointText(view.viewSize.width, 150);
+//     song_lyrics_3.content = 'Que sera sera. Que sera sera. Whatever will be.';
+//     song_lyrics_3.style = {
+//     fontFamily: 'Courier New',
+//     fontWeight: 'bold',
+//     fontSize: 20,
+//     fillColor: 'black',
+//     justification: 'left'
+//     };
+//     song_lyrics_3.visible = false;
+//
+// var holeword = new PointText(view.center.x+3,view.center.y+10);
+//     holeword.content = 'yeah'
+//     holeword.style = {
+//     fontFamily: 'Courier New',
+//     fontWeight: 'bold',
+//     fontSize: 10,
+//     fillColor: 'black',
+//     justification: 'right'
+//     };
+//
+// function onKeyDown(event) {
+//     if(event.key == '1') {
+//         song_name_0.visible = false;
+//         song_lyrics_0.visible = false;
+//         song_name_2.visible = false;
+//         song_lyrics_2.visible = false;
+//         song_name_3.visible = false;
+//         song_lyrics_3.visible = false;
+//         //
+//         song_name_1.visible = true;
+//         song_lyrics_1.visible = true;
+//         song_lyrics_1.position.x = view.viewSize.width+590
+//         //
+//         path_group.strokeColor = '#a72c52'
+//     }
+//     if(event.key == '2') {
+//         song_name_0.visible = false;
+//         song_lyrics_0.visible = false;
+//         song_name_1.visible = false;
+//         song_lyrics_1.visible = false;
+//         song_name_3.visible = false;
+//         song_lyrics_3.visible = false;
+//         //
+//         song_name_2.visible = true;
+//         song_lyrics_2.visible = true;
+//         song_lyrics_2.position.x = view.viewSize.width+350
+//         song_lyrics_2.visible = true;
+//         path_group.strokeColor = '#6a6890'
+//     }
+//     if(event.key == '3') {
+//         song_name_0.visible = false;
+//         song_lyrics_0.visible = false;
+//         song_name_1.visible = false;
+//         song_lyrics_1.visible = false;
+//         song_name_2.visible = false;
+//         song_lyrics_2.visible = false;
+//         //
+//         song_name_3.visible = true;
+//         song_lyrics_3.visible = true;
+//         song_lyrics_3.position.x = view.viewSize.width+290
+//         song_lyrics_3.visible = true;
+//         //
+//         path_group.strokeColor = '#9e8fc1'
+//     }
+//     if(event.key == '0') {
+//         song_name_1.visible = false;
+//         song_lyrics_1.visible = false;
+//         song_name_2.visible = false;
+//         song_lyrics_2.visible = false;
+//         song_name_3.visible = false;
+//         song_lyrics_3.visible = false;
+//         //
+//         song_name_0.visible = true;
+//         song_lyrics_0.visible = true;
+//         song_lyrics_0.position.x = view.viewSize.width+1000
+//         song_lyrics_0.visible = true;
+//         //
+//         path_group.strokeColor = '#a8c0d8'
+//     }
+// }
+//
+// function onResize(){
+//     background.position = view.center;
+//     holeword.position.x = map(view.bounds.width, 0, -2000, 0, -1000);
+//     holeword.scaling = map(view.bounds.width, 0, 2000, 5, 0);
+// }
 
 
 //functions
