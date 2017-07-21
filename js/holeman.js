@@ -545,7 +545,7 @@ function onMouseUp(event) {
 
 //song names and lyrics
 var song_name_0 = new PointText(view.center.x, 75);
-    song_name_0.content = 'Small People';
+    song_name_0.content = 'Certainty';
     song_name_0.style = {
     fontFamily: 'Courier New',
     fontWeight: 'bold',
