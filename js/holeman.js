@@ -551,7 +551,7 @@ var song_name_0 = new PointText(view.center.x, 75);
     fontWeight: 'bold',
     fontSize: 25,
     fillColor: 'black',
-    justification: 'right'
+    justification: 'center'
     };
 
 var song_lyrics_0 = new PointText(view.viewSize.width, 150);
