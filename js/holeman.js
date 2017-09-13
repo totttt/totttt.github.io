@@ -68,38 +68,38 @@ fill.smooth({
     fill.visible = true;
 
 
-//decor
-var decor_1 = new Path({
-    segments: [[200,100], [250,120]],
-    strokeColor: '#ffffff',
-    strokeWidth: 6,
-    strokeCap: 'round'
-});
-
-var decor_2 = new Path({
-    segments: [[300,30], [310,60]],
-    strokeColor: '#ffffff',
-    strokeWidth: 6,
-    strokeCap: 'round'
-});
-
-var decor_3 = new Path({
-    segments: [[450,40], [420,70]],
-    strokeColor: '#ffffff',
-    strokeWidth: 6,
-    strokeCap: 'round'
-});
-
-var decor_4 = new Path({
-    segments: [[500,120], [430,130]],
-    strokeColor: '#ffffff',
-    strokeWidth: 6,
-    strokeCap: 'round'
-});
-
-var decor = new Group ([
-    decor_1, decor_2, decor_3, decor_4
-]);
+// //decor
+// var decor_1 = new Path({
+//     segments: [[200,100], [250,120]],
+//     strokeColor: '#ffffff',
+//     strokeWidth: 6,
+//     strokeCap: 'round'
+// });
+//
+// var decor_2 = new Path({
+//     segments: [[300,30], [310,60]],
+//     strokeColor: '#ffffff',
+//     strokeWidth: 6,
+//     strokeCap: 'round'
+// });
+//
+// var decor_3 = new Path({
+//     segments: [[450,40], [420,70]],
+//     strokeColor: '#ffffff',
+//     strokeWidth: 6,
+//     strokeCap: 'round'
+// });
+//
+// var decor_4 = new Path({
+//     segments: [[500,120], [430,130]],
+//     strokeColor: '#ffffff',
+//     strokeWidth: 6,
+//     strokeCap: 'round'
+// });
+//
+// var decor = new Group ([
+//     decor_1, decor_2, decor_3, decor_4
+// ]);
 
 //head
 var head = new Path({
@@ -270,7 +270,7 @@ var body = new Group([
 ]);
 
 var holeman = new Group([
-    fill, decor, legs, body, face
+    fill, legs, body, face
 ]);
 
 holeman.applyMatrix = false;
@@ -358,23 +358,23 @@ function onMouseMove(event) {
     stage_y = map(event.point.y, 0, view.viewSize.height, 0, 200);
     stage.point = [view.center.x,650+stage_y];
 
-    path1.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
-    path1.rotate(5);
-    path2.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
-    path2.rotate(5);
-    path3.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
-    path3.rotate(5);
-    path4.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
-    path4.rotate(5);
-    path5.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
-    path5.rotate(5);
-    path6.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
-    path6.rotate(5);
+    // path1.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
+    // path1.rotate(5);
+    // path2.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
+    // path2.rotate(5);
+    // path3.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
+    // path3.rotate(5);
+    // path4.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
+    // path4.rotate(5);
+    // path5.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
+    // path5.rotate(5);
+    // path6.scaling = map(event.point.y, 0, view.viewSize.height, 0.5, 4);
+    // path6.rotate(5);
 };
 
 
 //texts
-var command_key = new PointText(50, 75);
+var command_key = new PointText(50, 105);
 command_key.content = 'Click to sing';
 command_key.style = {
     fontFamily: 'Courier New',
@@ -395,62 +395,62 @@ command_key.style = {
 // };
 
 
-//chorus holemen
-var holeman2 = holeman.copyTo(project);
-    holeman2.scaling = 0.4
-    holeman2.applyMatrix = true;
-    holeman2.position = [150, view.viewSize.height-150]
-    holeman2.children[4].children[1].rotate(70);
-    holeman2.children[4].children[1].scaling = (1, 0.5);
-    holeman2.children[4].children[2].rotate(110);
-    holeman2.children[4].children[2].scaling = (1, 0.5);
-    holeman2.children[1].visible = false;
-    holeman2.children[3].children[2].visible = false;
-    holeman2.children[3].children[3].visible = false;
-    holeman2.strokeWidth = 4;
-    holeman2.children[4].strokeWidth = 3.5;
-
-var holeman3 = holeman.copyTo(project);
-    holeman3.scaling = 0.4
-    holeman3.applyMatrix = true;
-    holeman3.position = [400, view.viewSize.height-150]
-    holeman3.children[4].children[1].rotate(70);
-    holeman3.children[4].children[1].scaling = (1, 0.5);
-    holeman3.children[4].children[2].rotate(110);
-    holeman3.children[4].children[2].scaling = (1, 0.5);
-    holeman3.children[1].visible = false;
-    holeman3.children[3].children[2].visible = false;
-    holeman3.children[3].children[3].visible = false;
-    holeman3.strokeWidth = 4;
-    holeman3.children[4].strokeWidth = 3.5;
-
-var holeman4 = holeman.copyTo(project);
-    holeman4.scaling = 0.4
-    holeman4.applyMatrix = true;
-    holeman4.position = [view.viewSize.width-400, view.viewSize.height-150]
-    holeman4.children[4].children[1].rotate(70);
-    holeman4.children[4].children[1].scaling = (1, 0.5);
-    holeman4.children[4].children[2].rotate(110);
-    holeman4.children[4].children[2].scaling = (1, 0.5);
-    holeman4.children[1].visible = false;
-    holeman4.children[3].children[2].visible = false;
-    holeman4.children[3].children[3].visible = false;
-    holeman4.strokeWidth = 4;
-    holeman4.children[4].strokeWidth = 3.5;
-
-var holeman5 = holeman.copyTo(project);
-    holeman5.scaling = 0.4
-    holeman5.applyMatrix = true;
-    holeman5.position = [view.viewSize.width-150, view.viewSize.height-150]
-    holeman5.children[4].children[1].rotate(70);
-    holeman5.children[4].children[1].scaling = (1, 0.5);
-    holeman5.children[4].children[2].rotate(110);
-    holeman5.children[4].children[2].scaling = (1, 0.5);
-    holeman5.children[1].visible = false;
-    holeman5.children[3].children[2].visible = false;
-    holeman5.children[3].children[3].visible = false;
-    holeman5.strokeWidth = 4;
-    holeman5.children[4].strokeWidth = 3.5;
+// //chorus holemen
+// var holeman2 = holeman.copyTo(project);
+//     holeman2.scaling = 0.4
+//     holeman2.applyMatrix = true;
+//     holeman2.position = [150, view.viewSize.height-150]
+//     holeman2.children[4].children[1].rotate(70);
+//     holeman2.children[4].children[1].scaling = (1, 0.5);
+//     holeman2.children[4].children[2].rotate(110);
+//     holeman2.children[4].children[2].scaling = (1, 0.5);
+//     holeman2.children[1].visible = false;
+//     holeman2.children[3].children[2].visible = false;
+//     holeman2.children[3].children[3].visible = false;
+//     holeman2.strokeWidth = 4;
+//     holeman2.children[4].strokeWidth = 3.5;
+//
+// var holeman3 = holeman.copyTo(project);
+//     holeman3.scaling = 0.4
+//     holeman3.applyMatrix = true;
+//     holeman3.position = [400, view.viewSize.height-150]
+//     holeman3.children[4].children[1].rotate(70);
+//     holeman3.children[4].children[1].scaling = (1, 0.5);
+//     holeman3.children[4].children[2].rotate(110);
+//     holeman3.children[4].children[2].scaling = (1, 0.5);
+//     holeman3.children[1].visible = false;
+//     holeman3.children[3].children[2].visible = false;
+//     holeman3.children[3].children[3].visible = false;
+//     holeman3.strokeWidth = 4;
+//     holeman3.children[4].strokeWidth = 3.5;
+//
+// var holeman4 = holeman.copyTo(project);
+//     holeman4.scaling = 0.4
+//     holeman4.applyMatrix = true;
+//     holeman4.position = [view.viewSize.width-400, view.viewSize.height-150]
+//     holeman4.children[4].children[1].rotate(70);
+//     holeman4.children[4].children[1].scaling = (1, 0.5);
+//     holeman4.children[4].children[2].rotate(110);
+//     holeman4.children[4].children[2].scaling = (1, 0.5);
+//     holeman4.children[1].visible = false;
+//     holeman4.children[3].children[2].visible = false;
+//     holeman4.children[3].children[3].visible = false;
+//     holeman4.strokeWidth = 4;
+//     holeman4.children[4].strokeWidth = 3.5;
+//
+// var holeman5 = holeman.copyTo(project);
+//     holeman5.scaling = 0.4
+//     holeman5.applyMatrix = true;
+//     holeman5.position = [view.viewSize.width-150, view.viewSize.height-150]
+//     holeman5.children[4].children[1].rotate(70);
+//     holeman5.children[4].children[1].scaling = (1, 0.5);
+//     holeman5.children[4].children[2].rotate(110);
+//     holeman5.children[4].children[2].scaling = (1, 0.5);
+//     holeman5.children[1].visible = false;
+//     holeman5.children[3].children[2].visible = false;
+//     holeman5.children[3].children[3].visible = false;
+//     holeman5.strokeWidth = 4;
+//     holeman5.children[4].strokeWidth = 3.5;
 
 
 //singing mouth
@@ -507,14 +507,14 @@ function onFrame(event) {
         var singing_mouth_size = getRandom(10, 40);
         singing_mouth.position.y = view.viewSize.height-595+singing_mouth_size/2;
         singing_mouth.size = [30,singing_mouth_size];
-        singing_mouth_2.position.y = view.viewSize.height-195+singing_mouth_size/4;
-        singing_mouth_2.size = [12,singing_mouth_size/2];
-        singing_mouth_3.position.y = view.viewSize.height-195+singing_mouth_size/4;
-        singing_mouth_3.size = [12,singing_mouth_size/2];
-        singing_mouth_4.position.y = view.viewSize.height-195+singing_mouth_size/4;
-        singing_mouth_4.size = [12,singing_mouth_size/2];
-        singing_mouth_5.position.y = view.viewSize.height-195+singing_mouth_size/4;
-        singing_mouth_5.size = [12,singing_mouth_size/2];
+        // singing_mouth_2.position.y = view.viewSize.height-195+singing_mouth_size/4;
+        // singing_mouth_2.size = [12,singing_mouth_size/2];
+        // singing_mouth_3.position.y = view.viewSize.height-195+singing_mouth_size/4;
+        // singing_mouth_3.size = [12,singing_mouth_size/2];
+        // singing_mouth_4.position.y = view.viewSize.height-195+singing_mouth_size/4;
+        // singing_mouth_4.size = [12,singing_mouth_size/2];
+        // singing_mouth_5.position.y = view.viewSize.height-195+singing_mouth_size/4;
+        // singing_mouth_5.size = [12,singing_mouth_size/2];
     }
     else {
         song_lyrics_0.position.x -= 2;
@@ -527,25 +527,25 @@ function onFrame(event) {
 function onMouseDown(event) {
     holeman.children[4].children[3].visible = false;
     singing_mouth.visible = true;
-    singing_mouth_2.visible = true;
-    singing_mouth_3.visible = true;
-    singing_mouth_4.visible = true;
-    singing_mouth_5.visible = true;
+    // singing_mouth_2.visible = true;
+    // singing_mouth_3.visible = true;
+    // singing_mouth_4.visible = true;
+    // singing_mouth_5.visible = true;
 }
 
 function onMouseUp(event) {
     holeman.children[4].children[3].visible = true;
     singing_mouth.visible = false;
-    singing_mouth_2.visible = false;
-    singing_mouth_3.visible = false;
-    singing_mouth_4.visible = false;
-    singing_mouth_5.visible = false;
+    // singing_mouth_2.visible = false;
+    // singing_mouth_3.visible = false;
+    // singing_mouth_4.visible = false;
+    // singing_mouth_5.visible = false;
 }
 
 
 //song names and lyrics
 var song_name_0 = new PointText(view.center.x, 75);
-    song_name_0.content = 'Certainty';
+    song_name_0.content = 'TOTT';
     song_name_0.style = {
     fontFamily: 'Courier New',
     fontWeight: 'bold',
@@ -554,15 +554,15 @@ var song_name_0 = new PointText(view.center.x, 75);
     justification: 'center'
     };
 
-var song_lyrics_0 = new PointText(view.viewSize.width, 150);
-    song_lyrics_0.content = 'I want to know that certainties in my life. I want to know that certainties in the light. I want to know that certainties in my life. Is not lonely and more defined.';
-    song_lyrics_0.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 20,
-    fillColor: 'black',
-    justification: 'left'
-    };
+// var song_lyrics_0 = new PointText(view.viewSize.width, 150);
+//     song_lyrics_0.content = 'I want to know that certainties in my life. I want to know that certainties in the light. I want to know that certainties in my life. Is not lonely and more defined.';
+//     song_lyrics_0.style = {
+//     fontFamily: 'Courier New',
+//     fontWeight: 'bold',
+//     fontSize: 20,
+//     fillColor: 'black',
+//     justification: 'left'
+//     };
 
 // var song_name_1 = new PointText(view.viewSize.width-50, 100);
 //     song_name_1.content = 'Spiderhead';
