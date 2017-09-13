@@ -377,15 +377,15 @@ function onMouseMove(event) {
 
 
 //texts
-var command_key = new PointText(50, 105);
-command_key.content = 'Click to sing';
-command_key.style = {
-    fontFamily: 'Courier New',
-    fontWeight: 'bold',
-    fontSize: 20,
-    fillColor: 'black',
-    justification: 'left'
-};
+// var command_key = new PointText(50, 105);
+// command_key.content = 'Click to sing';
+// command_key.style = {
+//     fontFamily: 'Courier New',
+//     fontWeight: 'bold',
+//     fontSize: 20,
+//     fillColor: 'black',
+//     justification: 'left'
+// };
 
 // var command_mouse = new PointText(50, 100);
 // command_mouse.content = 'Click to sing';
@@ -547,15 +547,15 @@ function onMouseUp(event) {
 
 
 //song names and lyrics
-// var song_name_0 = new PointText(view.center.x, 75);
-//     song_name_0.content = 'TOTT';
-//     song_name_0.style = {
-//     fontFamily: 'Courier New',
-//     fontWeight: 'bold',
-//     fontSize: 25,
-//     fillColor: 'black',
-//     justification: 'center'
-//     };
+var song_name_0 = new PointText(view.center.x, 75);
+    song_name_0.content = 'TOTT';
+    song_name_0.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 25,
+    fillColor: 'black',
+    justification: 'center'
+    };
 
 // var song_lyrics_0 = new PointText(view.viewSize.width, 150);
 //     song_lyrics_0.content = 'I want to know that certainties in my life. I want to know that certainties in the light. I want to know that certainties in my life. Is not lonely and more defined.';
