@@ -265,12 +265,14 @@ var legs = new Group([
 
 
 //group
-var body = new Group([
-    l_body, r_body, hole, inner_hole, l_arm, r_arm
-]);
+
 
 var holeman = new Group([
     fill, legs, body, face
+]);
+
+var body = new Group([
+    l_body, r_body, hole, inner_hole, l_arm, r_arm
 ]);
 
 holeman.applyMatrix = false;
