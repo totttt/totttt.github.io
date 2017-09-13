@@ -508,7 +508,7 @@ function onFrame(event) {
     count++;
     if (count % 4 === 0) {
         var singing_mouth_size = getRandom(10, 40);
-        singing_mouth.position.y = view.viewSize.height-615+singing_mouth_size/2;
+        singing_mouth.position.y = view.viewSize.height-620+singing_mouth_size/2;
         singing_mouth.size = [30,singing_mouth_size];
         // singing_mouth_2.position.y = view.viewSize.height-195+singing_mouth_size/4;
         // singing_mouth_2.size = [12,singing_mouth_size/2];
