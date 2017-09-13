@@ -2,7 +2,7 @@
 var background = new Path.Rectangle({
     point: [0, 0],
     size: [view.viewSize.width, view.viewSize.height],
-    fillColor: '#f7f3ed',
+    fillColor: '#c3d4e5',
     });
 
 var stage = new Shape.Ellipse({
