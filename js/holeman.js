@@ -466,41 +466,41 @@ var singing_mouth = new Shape.Ellipse({
     singing_mouth.visible = false;
     singing_mouth.applyMatrix = true;
 
-var singing_mouth_2 = new Shape.Ellipse({
-    point: [150, 0],
-    size: [0, 0]});
-    singing_mouth_2.strokeColor = '#000000',
-    singing_mouth_2.strokeWidth = 3.5,
-    singing_mouth_2.fillColor = '#ffffff';
-    singing_mouth_2.visible = false;
-    singing_mouth_2.applyMatrix = true;
-
-var singing_mouth_3 = new Shape.Ellipse({
-    point: [400, 0],
-    size: [0, 0]});
-    singing_mouth_3.strokeColor = '#000000',
-    singing_mouth_3.strokeWidth = 3.5,
-    singing_mouth_3.fillColor = '#ffffff';
-    singing_mouth_3.visible = false;
-    singing_mouth_3.applyMatrix = true;
-
-var singing_mouth_4 = new Shape.Ellipse({
-    point: [view.viewSize.width-400, 0],
-    size: [0, 0]});
-    singing_mouth_4.strokeColor = '#000000',
-    singing_mouth_4.strokeWidth = 3.5,
-    singing_mouth_4.fillColor = '#ffffff';
-    singing_mouth_4.visible = false;
-    singing_mouth_4.applyMatrix = true;
-
-var singing_mouth_5 = new Shape.Ellipse({
-    point: [view.viewSize.width-150, 0],
-    size: [0, 0]});
-    singing_mouth_5.strokeColor = '#000000',
-    singing_mouth_5.strokeWidth = 3.5,
-    singing_mouth_5.fillColor = '#ffffff';
-    singing_mouth_5.visible = false;
-    singing_mouth_5.applyMatrix = true;
+// var singing_mouth_2 = new Shape.Ellipse({
+//     point: [150, 0],
+//     size: [0, 0]});
+//     singing_mouth_2.strokeColor = '#000000',
+//     singing_mouth_2.strokeWidth = 3.5,
+//     singing_mouth_2.fillColor = '#ffffff';
+//     singing_mouth_2.visible = false;
+//     singing_mouth_2.applyMatrix = true;
+//
+// var singing_mouth_3 = new Shape.Ellipse({
+//     point: [400, 0],
+//     size: [0, 0]});
+//     singing_mouth_3.strokeColor = '#000000',
+//     singing_mouth_3.strokeWidth = 3.5,
+//     singing_mouth_3.fillColor = '#ffffff';
+//     singing_mouth_3.visible = false;
+//     singing_mouth_3.applyMatrix = true;
+//
+// var singing_mouth_4 = new Shape.Ellipse({
+//     point: [view.viewSize.width-400, 0],
+//     size: [0, 0]});
+//     singing_mouth_4.strokeColor = '#000000',
+//     singing_mouth_4.strokeWidth = 3.5,
+//     singing_mouth_4.fillColor = '#ffffff';
+//     singing_mouth_4.visible = false;
+//     singing_mouth_4.applyMatrix = true;
+//
+// var singing_mouth_5 = new Shape.Ellipse({
+//     point: [view.viewSize.width-150, 0],
+//     size: [0, 0]});
+//     singing_mouth_5.strokeColor = '#000000',
+//     singing_mouth_5.strokeWidth = 3.5,
+//     singing_mouth_5.fillColor = '#ffffff';
+//     singing_mouth_5.visible = false;
+//     singing_mouth_5.applyMatrix = true;
 
 
 var count = 0;
@@ -528,7 +528,7 @@ function onFrame(event) {
 }
 
 function onMouseDown(event) {
-    holeman.children[4].children[3].visible = false;
+    holeman.children[3].children[3].visible = false;
     singing_mouth.visible = true;
     // singing_mouth_2.visible = true;
     // singing_mouth_3.visible = true;
@@ -537,7 +537,7 @@ function onMouseDown(event) {
 }
 
 function onMouseUp(event) {
-    holeman.children[4].children[3].visible = true;
+    holeman.children[3].children[3].visible = true;
     singing_mouth.visible = false;
     // singing_mouth_2.visible = false;
     // singing_mouth_3.visible = false;
