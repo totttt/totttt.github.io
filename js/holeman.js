@@ -298,7 +298,7 @@ function onMouseMove(event) {
     holeman.children[0].segments[48].point = [l_arm_x_fill+169,243];
     holeman.children[0].segments[49].point = [l_arm_x_fill+180,230];
     holeman.children[0].segments[50].point = [l_arm_x_fill+220,220];
-    holeman.children[3].children[4].smooth({type: 'catmull-rom',factor: 0.4});
+    holeman.children[2].children[4].smooth({type: 'catmull-rom',factor: 0.4});
 
     r_arm_x = map(event.point.x, view.center.x, view.viewSize.width, 0, 500);
     if (r_arm_x < view.center.x/500) {r_arm_x = 0};
@@ -317,7 +317,7 @@ function onMouseMove(event) {
     holeman.children[0].segments[17].point = [r_arm_x_fill+531,248];
     holeman.children[0].segments[18].point = [r_arm_x_fill+527,252];
     holeman.children[0].segments[19].point = [r_arm_x_fill+519,257];
-    holeman.children[3].children[5].smooth({type: 'catmull-rom',factor: 0.4});
+    holeman.children[2].children[5].smooth({type: 'catmull-rom',factor: 0.4});
 
     l_leg_y = map(event.point.y, 0, view.viewSize.width, 0, 300);
     holeman.children[1].children[0].segments[2].point = [258,490+l_leg_y];
