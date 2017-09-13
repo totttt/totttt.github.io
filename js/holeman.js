@@ -7,39 +7,39 @@ var background = new Path.Rectangle({
 
 var stage = new Shape.Ellipse({
     point: [view.center.x-250, 650],
-    size: [500, 200]});
+    size: [400, 200]});
 
 stage.fillColor = '#000000';
 stage.visible = true;
 
 
 //path
-var path1 = new Path({
-    segments: [[130, 200], [180, 250]],
-    strokeColor: '#a8c0d8',
-    strokeWidth: 10,
-    strokeCap: 'round'
-});
-path1.position = [140, 230]
-path1.applyMatrix = false;
-
-var path2 = path1.copyTo(project);
-path2.position = [450, 430]
-
-var path3 = path1.copyTo(project);
-path3.position = [140, 630]
-
-var path4 = path1.copyTo(project);
-path4.position = [view.viewSize.width-140, 230]
-
-var path5 = path1.copyTo(project);
-path5.position = [view.viewSize.width-450, 430]
-
-var path6 = path1.copyTo(project);
-path6.position = [view.viewSize.width-140, 630]
-
-var path_group = new Group (
-    path1, path2, path3, path4, path5, path6);
+// var path1 = new Path({
+//     segments: [[130, 200], [180, 250]],
+//     strokeColor: '#a8c0d8',
+//     strokeWidth: 10,
+//     strokeCap: 'round'
+// });
+// path1.position = [140, 230]
+// path1.applyMatrix = false;
+//
+// var path2 = path1.copyTo(project);
+// path2.position = [450, 430]
+//
+// var path3 = path1.copyTo(project);
+// path3.position = [140, 630]
+//
+// var path4 = path1.copyTo(project);
+// path4.position = [view.viewSize.width-140, 230]
+//
+// var path5 = path1.copyTo(project);
+// path5.position = [view.viewSize.width-450, 430]
+//
+// var path6 = path1.copyTo(project);
+// path6.position = [view.viewSize.width-140, 630]
+//
+// var path_group = new Group (
+//     path1, path2, path3, path4, path5, path6);
 
 var fill = new Path({
     segments: [[300,200], [308,180], [315,150], [325,110], [335,90],
