@@ -6,8 +6,8 @@ var background = new Path.Rectangle({
     });
 
 var stage = new Shape.Ellipse({
-    point: [view.center.x-250, 650],
-    size: [400, 200]});
+    point: [view.center.x-200, 650],
+    size: [400, 300]});
 
 stage.fillColor = '#000000';
 stage.visible = true;
@@ -508,7 +508,7 @@ function onFrame(event) {
     count++;
     if (count % 4 === 0) {
         var singing_mouth_size = getRandom(10, 40);
-        singing_mouth.position.y = view.viewSize.height-595+singing_mouth_size/2;
+        singing_mouth.position.y = view.viewSize.height-605+singing_mouth_size/2;
         singing_mouth.size = [30,singing_mouth_size];
         // singing_mouth_2.position.y = view.viewSize.height-195+singing_mouth_size/4;
         // singing_mouth_2.size = [12,singing_mouth_size/2];
