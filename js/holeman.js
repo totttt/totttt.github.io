@@ -2,7 +2,7 @@
 var background = new Path.Rectangle({
     point: [0, 0],
     size: [view.viewSize.width, view.viewSize.height],
-    fillColor: '#c3d4e5',
+    fillColor: '#f7f3ed',
     });
 
 var stage = new Shape.Ellipse({
@@ -266,14 +266,15 @@ var legs = new Group([
 
 //group
 
+var body = new Group([
+    l_body, r_body, hole, inner_hole, l_arm, r_arm
+]);
 
 var holeman = new Group([
     fill, legs, body, face
 ]);
 
-var body = new Group([
-    l_body, r_body, hole, inner_hole, l_arm, r_arm
-]);
+
 
 holeman.applyMatrix = false;
 holeman.position.x = view.center.x;
