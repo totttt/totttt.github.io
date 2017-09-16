@@ -19,8 +19,7 @@ header {
 
 
 body {
-  background-image: url("../img/dreamwalking.gif");
-  background-repeat: no-repeat;
+  background-image: url("../img/dreamwalking_bg.gif");
   background-position: 50% 50%;
   background-color: #000000;
   margin: 0;
@@ -33,4 +32,13 @@ a {
     font-family: 'Megrim', cursive;
     font-size: 17px;
     font-weight: bold;
+}
+
+div.container {
+  position: absolute;
+  left: calc(50% - 250px);
+  bottom: 30%;
+  width: 500px;
+  height: 100px;
+  margin: 0;
 }
