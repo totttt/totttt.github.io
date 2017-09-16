@@ -1,0 +1,78 @@
+
+html {
+  height: 100%;
+}
+
+
+header {
+  padding-top: 7em;
+  padding-bottom: 3em;
+  color: black;
+  background-color: white;
+  clear: left;
+  text-align: center;
+  font-family: 'Megrim', cursive;
+  font-size: 13px;
+  background-color: white;
+  font-weight: bold;
+  line-height:1.8em
+}
+
+
+body {
+  background-image: url("../img/dreamwalking_white.gif");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #000000;
+  bottom: 0;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  background-color: white;
+  font-weight: 400;
+}
+
+
+a {
+  text-decoration: none;
+  background-color: white;
+  font-family: 'Megrim', cursive;
+  font-size: 17px;
+  background-color: white;
+  font-weight: bold;
+}
+
+
+div.container {
+  bottom: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  top: 25%;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  line-height: 1.4em;
+}
+
+
+a.week_done {
+  font-family: 'Oswald', sans-serif;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.5em;"
+}
+
+
+a.week_coming {
+  font-family: 'Oswald', sans-serif;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.5em;
+  color:lightgrey;
+}

@@ -1,0 +1,36 @@
+
+
+html {
+  height: 100%;
+}
+
+
+header {
+    padding-top: 7em;
+    padding-bottom: 3em;
+    color: black;
+    clear: left;
+    text-align: center;
+    font-family: 'Megrim', cursive;
+    font-size: 13px;
+    font-weight: bold;
+    line-height:1.8em
+}
+
+
+body {
+  background-image: url("../img/dreamwalking.gif");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #ffffff;
+  margin: 0;
+  height: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    font-family: 'Megrim', cursive;
+    font-size: 17px;
+    font-weight: bold;
+}

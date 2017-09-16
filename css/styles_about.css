@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+html {
+  height: 100%;
+}
+
+
+header {
+  padding-top: 7em;
+  padding-bottom: 3em;
+  color: black;
+  background-color: white;
+  clear: left;
+  text-align: center;
+  font-family: 'Megrim', cursive;
+  font-size: 13px;
+  background-color: white;
+  font-weight: bold;
+  line-height:1.8em
+}
+
+
+body {
+  background-image: url("../img/dreamwalking_white.gif");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #000000;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  background-color: white;
+  font-weight: 400;
+}
+
+
+a {
+  text-decoration: none;
+  background-color: white;
+  font-family: 'Megrim', cursive;
+  font-size: 17px;
+  background-color: white;
+  font-weight: bold;
+}
+
+
+div.container {
+  bottom: 0;
+  padding: 0;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  right: 60%;
+  width: 500px;
+  height: 100px;
+  margin: 0;
+  line-height: 1.4em;
+}
+
+
+div.name {
+  font-family: 'Oswald', sans-serif;
+  line-height: 40px;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+
+div.namekr {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.4em;
+}
+
+
+div.title {
+  font-family: 'Oswald', sans-serif;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+
+div.eng {
+  font-family: 'Oswald', sans-serif;
+  line-height: 40px;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 100;
+}
