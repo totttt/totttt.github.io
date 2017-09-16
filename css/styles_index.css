@@ -14,7 +14,8 @@ header {
     font-family: 'Megrim', cursive;
     font-size: 13px;
     font-weight: bold;
-    line-height:1.8em
+    line-height:1.8em;
+    background-color: #000000;
 }
 
 
@@ -22,7 +23,7 @@ body {
   background-image: url("../img/dreamwalking.gif");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-color: #ffffff;
+  background-color: #000000;
   margin: 0;
   height: 100%;
 }
