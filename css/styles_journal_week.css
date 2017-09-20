@@ -22,10 +22,6 @@ header {
 
 
 body {
-  background-image: url("../img/dreamwalking_white.gif");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: #000000;
   bottom: 0;
   padding: 0;
   margin: 0 auto;
@@ -49,20 +45,66 @@ a {
 div.container {
   bottom: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 14px;
   font-weight: 400;
   top: 25%;
-  width: 500px;
+  width: 600px;
   height: 100px;
   margin: 0 auto;
-  line-height: 1.4em;
+  line-height: 2em;
+}
+
+
+div.schedule {
+  bottom: 0;
+  padding: 0;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  top: 25%;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  line-height: 2em;
+}
+
+
+div.bold {
+  bottom: 0;
+  padding: 0;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  top: 25%;
+  width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  line-height: 2em;
+}
+
+
+div.bold_title {
+  bottom: 0;
+  padding: 0;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  top: 25%;
+  width: 600px;
+  height: 0px;
+  margin: 0 auto;
+  line-height: 2em;
 }
 
 
 div.week_done {
   font-family: 'Oswald', sans-serif;
+  text-align: center;
   line-height: 40px;
   font-size: 20px;
   font-weight: 100;
