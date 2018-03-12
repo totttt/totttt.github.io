@@ -29,9 +29,9 @@ body {
 
 a {
     text-decoration: none;
-    font-family: 'Megrim', cursive;
+    font-family: 'Roboto slab', serif;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 100;
 }
 
 div.container {

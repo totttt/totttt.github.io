@@ -13,7 +13,7 @@ header {
   background-color: white;
   clear: left;
   text-align: center;
-  font-family: 'Megrim', cursive;
+  font-family: 'Roboto slab', serif;
   font-size: 13px;
   background-color: white;
   font-weight: bold;
@@ -46,12 +46,13 @@ a {
   font-size: 17px;
   background-color: white;
   font-weight: 100;
+  text-decoration-color: blue;
 }
 
 
 div.container {
   bottom: 0;
-  padding: 0;
+  padding-top: 50px;
   text-align: center;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
@@ -61,74 +62,38 @@ div.container {
   margin: 0 auto;
   line-height: 1.4em;
   letter-spacing: 0.6px;
+  width: 940px;
 }
 
 
-div.nameeng {
+div.works {
+  padding-top: 9px;
+  float: left;
+  width: 33%;
   font-family: 'Roboto slab', serif;
-  line-height: 40px;
-  font-size: 25px;
   font-weight: 100;
-  line-height: 1.4em;
-  letter-spacing: 1px;
-}
-
-
-div.namekor {
-  font-family: "Noto Sans KR", sans-serif;
-  line-height: 40px;
   font-size: 18px;
-  font-weight: 500;
-  line-height: 1.4em;
+  text-align: center;
+  letter-spacing: 2px
 }
 
+div.detail {
+  padding-top: 0px;
+  padding-bottom: 40px;
+  float: left;
+  width: 33%;
+  font-family: 'Roboto slab', serif;
+  font-weight: 100;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+}
 
 div.title {
   font-family: 'Roboto slab', serif;
   line-height: 40px;
-  font-size: 16px;
-  font-weight: 200;
-  line-height: 1.4em;
-}
-
-
-div.eng {
-  font-family: 'Roboto slab', serif;
-  line-height: 40px;
-  font-size: 16px;
-  line-height: 1.5em;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding-top: 12px;
-}
-
-div.kor {
-  bottom: 0;
-  padding-top: 10px;
-  text-align: center;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  align-self: center;
-  top: 10%;
-  margin: 0 auto;
-  line-height: 1.4em;
-  letter-spacing: 0.6px;
-}
-
-div.contact {
-  margin: 0 auto;
-  padding-left: 30px;
-  width: 200px;
-  text-align: left;
-}
-
-div.contactdetail {
-  font-family: 'Roboto slab', serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100;
-  line-height: 1.5em;
-  letter-spacing: 1px;
-  float: right;
-  padding: 0;
+  line-height: 1.4em;
+  letter-spacing: 2px;
 }
