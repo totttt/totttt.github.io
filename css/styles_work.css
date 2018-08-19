@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+html {
+  height: 100%;
+}
+
+header {
+  padding-top: 4em;
+  padding-bottom: 2em;
+  color: black;
+  background-color: #ffffff;
+  clear: left;
+  text-align: center;
+  font-family: 'Roboto slab', serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height:1.8em
+}
+
+body {
+  background-color: #ffffff;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+div.footer {
+  padding-top: 9em;
+  padding-bottom: 5em;
+  text-align: center;
+}
+
+a {
+  font-family: 'Roboto slab', serif;
+  font-size: 17px;
+  background-color: white;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+div.header-title {
+  font-family: 'Roboto slab', serif;
+  font-size: 27px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin = 0 auto;
+}
+
+div.container {
+  bottom: 0;
+  padding-top: 50px;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  align-self: center;
+  top: 10%;
+  margin: 0 auto;
+  line-height: 1.4em;
+  letter-spacing: 0.6px;
+  width: 1200px;
+}
+
+div.thumbnail-wrapper {
+    display: inline-block;
+    max-width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+div.title {
+  padding-top: 5px;
+  font-family: 'Roboto slab', serif;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.4em;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+div.caption {
+  padding-bottom: 4px;
+  font-family: 'Roboto slab', serif;
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: 100;
+  color: #515151;
+  line-height: 1.4em;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+div.work-title {
+  padding-top: 5px;
+  font-family: 'Roboto slab', serif;
+  line-height: 40px;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 1.4em;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+div.caption-eng {
+  padding: 0px 10px 30px 150px;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13.5px;
+  font-weight: 300;
+  float: left;
+  top: 10%;
+  margin: 0 auto;
+  line-height: 1.8em;
+  letter-spacing: 0.6px;
+  width: 600px;
+}
+
+div.caption-kor {
+  padding: 0px 150px 30px 10px;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13.5px;
+  font-weight: 300;
+  float: right;
+  top: 10%;
+  margin: 0 auto;
+  line-height: 1.8em;
+  letter-spacing: 0.6px;
+  width: 600px;
+}
+
+div.back {
+  align-self: center;
+  font-family: 'Roboto slab', serif;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.4em;
+  letter-spacing: 2px;
+  bottom: 0;
+  padding-top: 50px;
+  text-align: center;
+  top: 10%;
+  margin: 0 auto;
+  width: 200px;
+}
+
+img.thumbnail {
+  width: 350px;
+}
+
+img.work-img {
+  width: 1200px;
+}
+
+img.work-img-1000px {
+  width: 1000px;
+}
+
+img.work-img-900px {
+  width: 900px;
+}
+
+img.work-img-800px {
+  width: 800px;
+}
+
+img.work-img-700px {
+  width: 700px;
+}
+
+@media ( max-width: 1200px ) {
+    div.container {
+      width: 800px;
+    }
+    div.thumbnail-wrapper {
+      width: 320px;
+    }
+    a {
+      width: 320px;
+    }
+    div.caption-eng {
+      width: auto;
+      float: none;
+      padding: 0px 22px 0px 22px;
+    }
+    div.caption-kor {
+      width: auto;
+      float: none;
+      padding: 13px 22px 0px 22px;
+    }
+    img.thumbnail {
+      width: 300px;
+    }
+    img.work-img {
+      width: 100%;
+    }
+    img.work-img-1000px {
+      width: 800px;
+    }
+    img.work-img-900px {
+      width: 800px;
+    }
+    img.work-img-800px {
+      width: 800px;
+    }
+    img.work-img-700px {
+      width: 700px;
+    }
+}
+
+@media ( max-width: 800px ) {
+    div.container {
+      width: auto;
+    }
+    div.thumbnail-wrapper {
+      width: 100%;
+    }
+    a {
+      width: 180px;
+    }
+    img.thumbnail {
+      width: 100%;
+    }
+    img.work-img-1000px {
+      width: 100%;
+    }
+    img.work-img-900px {
+      width: 100%;
+    }
+    img.work-img-800px {
+      width: 100%;
+    }
+    img.work-img-700px {
+      width: 100%;
+    }
+  }
+
+@media ( max-width: 430px ) {
+    div.thumbnail-wrapper {
+      padding: 13px 2px 10px 2px;
+    }
+    div.title {
+      font-size: 13px;
+    }
+    div.caption {
+      font-size: 12px;
+    }
+  }

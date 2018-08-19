@@ -5,53 +5,49 @@ html {
   height: 100%;
 }
 
-
 header {
-  padding-top: 7em;
-  padding-bottom: 3em;
+  padding-top: 4em;
+  padding-bottom: 2em;
   color: black;
-  background-color: white;
+  background-color: #ffffff;
   clear: left;
   text-align: center;
-  font-family: 'Megrim', cursive;
+  font-family: 'Roboto slab', serif;
   font-size: 13px;
-  background-color: white;
   font-weight: bold;
   line-height:1.8em
 }
 
-
 body {
-  /*
-  background-image: url("../img/dreamwalking_white.gif");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  */
-  background-color: #000000;
+  background-color: #ffffff;
   bottom: 0;
   padding: 0;
   margin: 0;
   text-align: left;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 14px;
-  background-color: white;
   font-weight: 400;
 }
 
-
 a {
-  text-decoration: none;
-  background-color: white;
   font-family: 'Roboto slab', serif;
   font-size: 17px;
   background-color: white;
   font-weight: 100;
+  letter-spacing: 1px;
 }
 
+div.header-title {
+  font-family: 'Roboto slab', serif;
+  font-size: 27px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin = 0 auto;
+}
 
 div.container {
   bottom: 0;
-  padding: 0;
+  padding-top: 50px;
   text-align: center;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
@@ -61,74 +57,57 @@ div.container {
   margin: 0 auto;
   line-height: 1.4em;
   letter-spacing: 0.6px;
+  width: 300px;
 }
 
-
-div.nameeng {
+div.name-eng {
   font-family: 'Roboto slab', serif;
   line-height: 40px;
   font-size: 25px;
   font-weight: 100;
   line-height: 1.4em;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
-
-div.namekor {
+div.name-kor {
   font-family: "Noto Sans KR", sans-serif;
   line-height: 40px;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.4em;
+  letter-spacing: 2px;
 }
 
-
-div.title {
+div.about {
   font-family: 'Roboto slab', serif;
   line-height: 40px;
-  font-size: 16px;
-  font-weight: 200;
-  line-height: 1.4em;
-}
-
-
-div.eng {
-  font-family: 'Roboto slab', serif;
-  line-height: 40px;
-  font-size: 16px;
-  line-height: 1.5em;
-  font-weight: 200;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 3em;
   letter-spacing: 1px;
-  padding-top: 12px;
-}
-
-div.kor {
-  bottom: 0;
-  padding-top: 10px;
-  text-align: center;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  align-self: center;
-  top: 10%;
-  margin: 0 auto;
-  line-height: 1.4em;
-  letter-spacing: 0.6px;
 }
 
 div.contact {
+  width: 170px;
+  align-self: center;
+  font-family: 'Roboto slab', serif;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+  bottom: 0;
+  padding: 50px 0px 5em 13px;
+  align-self: center;
   margin: 0 auto;
-  padding-left: 30px;
-  width: 200px;
-  text-align: left;
 }
 
-div.contactdetail {
+div.contact-title {
   font-family: 'Roboto slab', serif;
-  font-size: 16px;
+  line-height: 40px;
+  font-size: 17px;
   font-weight: 100;
-  line-height: 1.5em;
+  line-height: 3em;
   letter-spacing: 1px;
-  float: right;
-  padding: 0;
+  text-align: center;
 }

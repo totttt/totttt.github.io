@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>TOTT</title>
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.3/paper-full.min.js"></script> -->
+    <link rel="icon" href="img/logo.png">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.3/paper-full.min.js"></script>
     <link href="css/styles_index.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
 
-    a { text-decoration: none; color: white; }
+    a { text-decoration: none; color: black;}
     a:visited { text-decoration: none; }
     a:hover { text-decoration: none; }
     a:focus { text-decoration: none; }
@@ -18,13 +18,117 @@
     * {box-sizing: border-box;}
 
     </style>
+    <script type = "text/javascript" src = "http://paperjs.org/assets/js/paper.js"> </script>
   </head>
 
   <body>
     <header>
-       <h1><a href="index.html" style="font-family: 'Roboto slab', serif; font-size: 27px; font-weight: 100; letter-spacing: 3px;">TOTT</a></h1>
-       <a href="about.html">About</a> <a>　</a> <a href="works.html">Works</a>
+       <h1><a href="index.html"><div class="header-title">TOTT</div></a></h1>
+       <a href="work.html">Work</a>&emsp;&emsp;<a href="about.html">About</a>
     </header>
+    <canvas id="canvas" hidpi="on" resize = "true"></canvas>
   </body>
+
+  <script type= "text/paperscript" canvas = "canvas" >
+
+    var bg = new Path.Ellipse({point: [view.center.x-80, 490], size: [160, 40]});
+    bg.fillColor = 'black';
+
+    var one = new Path.Circle(new Point(80, 50), 141);
+    one.position.x = view.center.x;
+    one.position.y = view.center.y-550;
+    one.fillColor = 'yellow';
+
+    var two = new Path.Circle(new Point(80, 50), 170);
+    two.position.x = view.center.x;
+    two.position.y = view.center.y-300;
+    two.fillColor = 'green';
+
+    var unite = one.unite(two);
+    unite.position.x = view.center.x;
+    unite.position.y = 400;
+    unite.strokeColor = 'black';
+    unite.strokeWidth = 2.5;
+    unite.fillColor = 'white';
+    unite.strokeJoin = 'round';
+    unite.scale(0.4);
+
+    one.visible = false;
+    two.visible = false;
+
+    var r_eye = new Path.Ellipse({point: [view.center.x-13, view.center.y-180], size: [6, 10]});
+    r_eye.fillColor = 'black';
+
+    var l_eye = new Path.Ellipse({point: [view.center.x+7, view.center.y-180], size: [6, 10]});
+    l_eye.fillColor = 'black';
+
+    var eye = r_eye.unite(l_eye);
+    eye.position.x = view.center.x;
+    eye.position.y = 325;
+    eye.fillColor = 'black';
+
+    r_eye.visible = false;
+    l_eye.visible = false;
+
+    function onMouseMove(event) {
+      eye_x = map(event.point.x, 0, view.viewSize.width, -20, 20);
+    eye__x = view.center.x + eye_x;
+
+    eye_y = map(event.point.y, 0, view.viewSize.height, -15, 15);
+    eye__y = 325 + eye_y;
+
+    eye.position.x = eye__x;
+    eye.position.y = eye__y;
+    }
+
+    var count = 0;
+    function onFrame(event) {
+      count++;
+      if (count % 120 === 0) {
+          eye.bounds.height = 3
+      }
+      else if (count % 120 === 1) {
+          eye.bounds.height = 3
+      }
+      else if (count % 120 === 2) {
+          eye.bounds.height = 3
+      }
+      else if (count % 120 === 3) {
+          eye.bounds.height = 3
+      }
+      else {
+          eye.bounds.height = 10
+      }
+    }
+
+    function onMouseDown(event) {
+      var shape = new Shape.Circle(new Point(event.point.x, event.point.y), 5);
+      shape.strokeColor = 'black';
+      shape.strokeWidth = 2;
+      shape.fillColor = {
+          hue: getRandomInRange(200, 360),
+          saturation: getRandomInRange(0.5, 1),
+          brightness: getRandomInRange(0.99, 1)
+      };
+    }
+
+    function map(value, start1, stop1, start2, stop2) {
+      return start2 + (stop2 - start2) * ((value - start1) / (stop1 - start1));
+    }
+
+    function getRandomInRange(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    function onResize() {
+	     unite.position.x = view.center.x;
+       unite.position.y = 400;
+       eye.position.x = view.center.x;
+       eye.position.y = 325;
+       bg.position.x = view.center.x;
+    }
+
+
+  </script>
 
 </html>
