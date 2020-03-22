@@ -63,7 +63,7 @@ div.container {
   margin: 0 auto;
   line-height: 1.4em;
   letter-spacing: 0.6px;
-  width: 240px;
+  width: 290px;
 }
 
 div.blog-container {
@@ -86,14 +86,14 @@ div.number {
   bottom: 0;
   font-family: 'Roboto slab', serif;
   line-height: 40px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 100;
   line-height: 1.4em;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   top: 10%;
   line-height: 1.4em;
   letter-spacing: 0.6px;
-  width: 40px;
+  width: 30px;
   display: inline-block;
   vertical-align: top;
 }
@@ -102,21 +102,21 @@ div.title-container {
   bottom: 0;
   text-align: left;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 16px;
   font-weight: 300;
   align-self: center;
   top: 10%;
   line-height: 1.4em;
-  width: 190px;
+  width: 250px;
   display: inline-block;
   clear: left;
   padding-bottom: 15px;
+  padding-right: 1em;
 }
 
 div.title {
   font-family: 'Roboto slab', serif;
   line-height: 40px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.4em;
   margin: 0 auto;
@@ -180,7 +180,7 @@ img.blog-img-700px {
 
 @media ( max-width: 1200px ) {
     div.container {
-      width: 240px;
+      width: 290px;
     }
     div.blog-container {
       width: 750px;
@@ -207,7 +207,7 @@ img.blog-img-700px {
 
 @media ( max-width: 800px ) {
     div.container {
-      width: 240;
+      width: 270;
     }
     div.blog-container {
       width: 500px;
@@ -229,7 +229,7 @@ img.blog-img-700px {
     }
   }
 
-  @media ( max-width: 600px ) {
+@media ( max-width: 600px ) {
       div.blog-container {
         width: 430px;
         padding-left: 1.5em;
@@ -237,6 +237,12 @@ img.blog-img-700px {
       }
 
 @media ( max-width: 430px ) {
+    div.title-container {
+      width: auto;
+    }
+    div.blog-container {
+      width: auto;
+    }
     div.blog-container {
       width: auto;
       padding-left: 1.5em;
@@ -246,9 +252,9 @@ img.blog-img-700px {
       padding-top: 2em;
     }
     div.title {
-      font-size: 13px;
+      width: auto;
     }
     div.caption {
-      font-size: 12px;
+      width: auto;
     }
   }
