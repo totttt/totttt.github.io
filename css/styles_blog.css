@@ -239,6 +239,8 @@ img.blog-img-700px {
 @media ( max-width: 430px ) {
     div.blog-container {
       width: auto;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
     }
     header {
       padding-top: 2em;
