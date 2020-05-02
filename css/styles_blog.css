@@ -55,9 +55,6 @@ div.container {
   bottom: 0;
   padding-top: 50px;
   text-align: center;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
   align-self: center;
   top: 10%;
   margin: 0 auto;
@@ -77,7 +74,6 @@ div.blog-container {
   word-break: keep-all;
   top: 10%;
   margin: 0 auto;
-  line-height: 2em;
   letter-spacing: 0px;
   width: 700px;
 }
@@ -86,7 +82,7 @@ div.number {
   bottom: 0;
   font-family: 'Roboto slab', serif;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 100;
   line-height: 1.4em;
   letter-spacing: 0px;
@@ -101,11 +97,8 @@ div.number {
 div.title-container {
   bottom: 0;
   text-align: left;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 300;
   align-self: center;
   top: 10%;
-  line-height: 1.4em;
   width: 260px;
   display: inline-block;
   clear: left;
@@ -116,7 +109,7 @@ div.title-container {
 div.title {
   font-family: "Noto Sans KR", sans-serif;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
   line-height: 1.4em;
   margin: 0 auto;
