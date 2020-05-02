@@ -63,7 +63,7 @@ div.container {
   margin: 0 auto;
   line-height: 1.4em;
   letter-spacing: 0.6px;
-  width: 290px;
+  width: 300px;
 }
 
 div.blog-container {
@@ -106,7 +106,7 @@ div.title-container {
   align-self: center;
   top: 10%;
   line-height: 1.4em;
-  width: 250px;
+  width: 260px;
   display: inline-block;
   clear: left;
   padding-bottom: 15px;
@@ -180,7 +180,7 @@ img.blog-img-700px {
 
 @media ( max-width: 1200px ) {
     div.container {
-      width: 290px;
+      width: 300px;
     }
     div.blog-container {
       width: 750px;
