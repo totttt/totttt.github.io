@@ -99,6 +99,7 @@ div.blog-container-jp {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  word-break: break-all;
   top: 10%;
   margin: 0 auto;
   letter-spacing: 0px;
