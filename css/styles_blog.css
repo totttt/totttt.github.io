@@ -43,6 +43,7 @@ a {
   letter-spacing: 1px;
 }
 
+
 div.header-title {
   font-family: 'Roboto slab', serif;
   font-size: 27px;
@@ -51,9 +52,21 @@ div.header-title {
   margin = 0 auto;
 }
 
+div.language {
+  font-family: 'Roboto slab', serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: silver;
+  letter-spacing: 2px;
+  line-height: 0.7em;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 div.container {
   bottom: 0;
-  padding-top: 50px;
+  padding-top: 15px;
   text-align: center;
   align-self: center;
   top: 10%;
@@ -72,6 +85,20 @@ div.blog-container {
   font-size: 16px;
   font-weight: 300;
   word-break: keep-all;
+  top: 10%;
+  margin: 0 auto;
+  letter-spacing: 0px;
+  width: 700px;
+}
+
+div.blog-container_jp {
+  bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: left;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   top: 10%;
   margin: 0 auto;
   letter-spacing: 0px;
@@ -115,6 +142,16 @@ div.title {
   margin: 0 auto;
 }
 
+div.title_jp {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4em;
+  margin: 0 auto;
+  letter-spacing: 0;
+}
+
 div.blog-title {
   padding-top: 5px;
   font-family: "Noto Sans KR", sans-serif;
@@ -125,9 +162,30 @@ div.blog-title {
   margin: 0 auto;
 }
 
+div.blog-title_jp {
+  padding-top: 5px;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 40px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4em;
+  margin: 0 auto;
+}
+
 div.caption {
   padding-bottom: 4px;
   font-family: "Noto Sans KR", sans-serif;
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: 100;
+  color: #515151;
+  line-height: 1.4em;
+  margin: 0 auto;
+}
+
+div.caption_jp {
+  padding-bottom: 4px;
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 40px;
   font-size: 13px;
   font-weight: 100;
@@ -178,6 +236,9 @@ img.blog-img-700px {
     div.blog-container {
       width: 750px;
     }
+    div.blog-container_jp {
+      width: 750px;
+    }
     div.caption {
       width: 800px;
     }
@@ -205,6 +266,9 @@ img.blog-img-700px {
     div.blog-container {
       width: 500px;
     }
+    div.blog-container_jp {
+      width: 500px;
+    }
     a {
       width: 180px;
     }
@@ -228,6 +292,12 @@ img.blog-img-700px {
         padding-left: 1.5em;
         padding-right: 1.5em;
       }
+      div.blog-container_jp {
+        width: 430px;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+      }
+    }
 
 @media ( max-width: 430px ) {
     div.title-container {
@@ -237,6 +307,11 @@ img.blog-img-700px {
       width: auto;
     }
     div.blog-container {
+      width: auto;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+    div.blog-container_jp {
       width: auto;
       padding-left: 1.5em;
       padding-right: 1.5em;
