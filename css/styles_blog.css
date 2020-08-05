@@ -91,7 +91,7 @@ div.blog-container {
   width: 700px;
 }
 
-div.blog-container_jp {
+div.blog-container-jp {
   bottom: 0;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -142,7 +142,7 @@ div.title {
   margin: 0 auto;
 }
 
-div.title_jp {
+div.title-jp {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 40px;
   font-size: 18px;
@@ -162,7 +162,7 @@ div.blog-title {
   margin: 0 auto;
 }
 
-div.blog-title_jp {
+div.blog-title-jp {
   padding-top: 5px;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 40px;
@@ -183,7 +183,7 @@ div.caption {
   margin: 0 auto;
 }
 
-div.caption_jp {
+div.caption-jp {
   padding-bottom: 4px;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 40px;
@@ -236,7 +236,7 @@ img.blog-img-700px {
     div.blog-container {
       width: 750px;
     }
-    div.blog-container_jp {
+    div.blog-container-jp {
       width: 750px;
     }
     div.caption {
@@ -266,7 +266,7 @@ img.blog-img-700px {
     div.blog-container {
       width: 500px;
     }
-    div.blog-container_jp {
+    div.blog-container-jp {
       width: 500px;
     }
     a {
@@ -292,7 +292,7 @@ img.blog-img-700px {
         padding-left: 1.5em;
         padding-right: 1.5em;
       }
-      div.blog-container_jp {
+      div.blog-container-jp {
         width: 430px;
         padding-left: 1.5em;
         padding-right: 1.5em;
@@ -305,13 +305,10 @@ img.blog-img-700px {
     }
     div.blog-container {
       width: auto;
-    }
-    div.blog-container {
-      width: auto;
       padding-left: 1.5em;
       padding-right: 1.5em;
     }
-    div.blog-container_jp {
+    div.blog-container-jp {
       width: auto;
       padding-left: 1.5em;
       padding-right: 1.5em;
