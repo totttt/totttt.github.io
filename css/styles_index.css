@@ -8,7 +8,7 @@ html {
 }
 
 header {
-  padding-top: 7em;
+  padding-top: 8.7em;
   padding-bottom: 2em;
   color: black;
   clear: left;
@@ -16,7 +16,7 @@ header {
   font-family: 'Roboto slab', serif;
   font-size: 13px;
   font-weight: bold;
-  line-height:1.8em
+  line-height: 2em;
 }
 
 body {
@@ -33,25 +33,40 @@ body {
 }
 
 canvas[resize] {
+    position: absolute;
     width: 100%;
     height: 100%;
 }
 
 a {
   font-family: 'Roboto slab', serif;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 100;
   color: #000000;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+}
+
+div.index-image {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 div.header-title {
-  font-family: 'Roboto slab', serif;
-  font-size: 27px;
-  font-weight: 100;
-  letter-spacing: 3px;
-  margin = 0 auto;
-  color: #000000;
+    font-family: 'Roboto slab', serif;
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin = 0 auto;
+    color: #000000;
 }
 
 div.container {

@@ -15,7 +15,7 @@ header {
   font-family: 'Roboto slab', serif;
   font-size: 13px;
   font-weight: bold;
-  line-height:1.8em
+  line-height: 2em;
 }
 
 body {
@@ -37,16 +37,16 @@ div.footer {
 
 a {
   font-family: 'Roboto slab', serif;
-  font-size: 17px;
+  font-size: 15px;
   background-color: white;
-  font-weight: 100;
-  letter-spacing: 1px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 div.header-title {
   font-family: 'Roboto slab', serif;
-  font-size: 27px;
-  font-weight: 100;
+  font-size: 21px;
+  font-weight: 900;
   letter-spacing: 3px;
   margin = 0 auto;
 }
