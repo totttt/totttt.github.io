@@ -39,14 +39,14 @@ a {
   font-family: 'Roboto slab', serif;
   font-size: 15px;
   background-color: white;
-  font-weight: 900;
+  font-weight: 100;
   letter-spacing: 2px;
 }
 
 div.header-title {
   font-family: 'Roboto slab', serif;
   font-size: 21px;
-  font-weight: 900;
+  font-weight: 100;
   letter-spacing: 3px;
   margin = 0 auto;
 }
