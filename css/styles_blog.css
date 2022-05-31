@@ -39,7 +39,7 @@ a {
   font-family: 'Roboto slab', serif;
   font-size: 15px;
   background-color: white;
-  font-weight: 900;
+  font-weight: 100;
   letter-spacing: 2px;
 }
 
@@ -47,7 +47,7 @@ a {
 div.header-title {
   font-family: 'Roboto slab', serif;
   font-size: 21px;
-  font-weight: 900;
+  font-weight: 100;
   letter-spacing: 3px;
   margin = 0 auto;
 }
@@ -215,7 +215,7 @@ img.blog-img {
 }
 
 img.blog-img-1000px {
-  width: 1000px;
+    width: 1000px;
 }
 
 img.blog-img-900px {
