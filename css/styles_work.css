@@ -66,6 +66,21 @@ div.container {
   width: 1200px;
 }
 
+div.img_container {
+    display: inline-block;
+    bottom: 0;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    align-self: center;
+    top: 10%;
+    margin: 0 auto;
+    line-height: 1.4em;
+    letter-spacing: 0.6px;
+    width: 100%;
+}
+
 div.thumbnail-wrapper {
     display: inline-block;
     max-width: 40%;
@@ -158,14 +173,18 @@ img.thumbnail {
 
 img.work-img {
   width: 1200px;
+  text-align: center;
 }
 
 img.work-img-1000px {
+  margin:0 auto;
   width: 1000px;
+  text-align: center;
 }
 
 img.work-img-900px {
   width: 900px;
+  text-align: center;
 }
 
 img.work-img-800px {
